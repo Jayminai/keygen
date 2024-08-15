@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Promo Code Generator</h1>
+        <div class="form-group">
+            <label for="game-select">Select a game:</label>
+            <select id="game-select">
+                <option value="MyCloneArmy">MyCloneArmy</option>
+                <option value="ChainCube2048">ChainCube2048</option>
+                <option value="TrainMiner">TrainMiner</option>
+                <option value="BikeRide3D">BikeRide3D</option>
+                <option value="MergeAway">MergeAway</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="key-count">Enter number of promo codes:</label>
+            <input type="number" id="key-count" min="1" max="100" value="1">
+        </div>
+        <button id="generate-btn">Generate Keys</button>
+        <div id="progress-container" class="hidden">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="keys-container" class="hidden">
+            <h2>Generated Keys</h2>
+            <ul id="keys-list"></ul>
+        </div>
+        <button id="another-round-btn" class="hidden">Generate Another Set</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
